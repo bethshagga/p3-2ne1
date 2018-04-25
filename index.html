@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Blackjack </title>
+	<meta charset='utf-8'>
+	<link rel='stylesheet' href='css/normalize.css'>
+	<link rel='stylesheet' href='css/style.css'>
+</head>
+<body>
+
+	
+	<div>
+		<h1>BlackJack Game</h1><small>get to 2NE1 or higher then Dealer</small>
+			<div id="start">
+			<button id="btnstart" type="button" onclick="start()" class="btn"> start game</button>
+		</div>
+			<div class="total"> total $ <span id="dollars"> 100</span></div>
+			 <div>Bet Amount $<input type="number" id="mybet" value="10" min="10" max="100"><button id="maxbet" type="button" onclick="maxbet()" class="btn">Max Bet</button>
+
+        </div>
+        <div id="message">get to 2NE1 or higher then Dealer</div>	
+
+	<div id="output">
+	  Dealer Hand : <span id="dValue"></span>
+        <div id="dealerHolder"></div>
+        Player Hand : <span id="pValue"></span>
+        <div id="playerHolder"></div>
+        <div id="myactions">
+          <button id="btnhold" type="button" onclick="cardAction('hold')" class="btn">Hold</button>
+          <button id="btnhit" type="button" onclick="cardAction('hit')" class="btn">Hit</button>
+         
+        </div>
+ <div> 
+ 	<button id="btndeal" type="button" onclick="newDeal()" class="btn">Deal</button> 
+ </div>
+  </div>
+
+  <div>
+   
+
+
+  </div>
+<script src='js/main.js'></script>
+</body>
+</html>
